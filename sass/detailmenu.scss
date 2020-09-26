@@ -1,0 +1,387 @@
+@charset "UTF-8";
+
+/* reset */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, i, p {
+  margin: 0;
+  margin: 0;
+}
+
+/* Variables */
+/* ------------------------ HEADER FOOTER -------------------------- */
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #579c87;
+  padding: 0 0;
+}
+
+footer {
+  background-color: #579c87;
+  padding: 0 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+h1 {
+  /* titre ohmyfood */
+  color: #fdcb46;
+  text-align: center;
+  font-size: 5.5em;
+  padding-bottom: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+  /* titres footer */
+  color: #fdcb46;
+  text-align: justify;
+  display: inline-block;
+  font-size: 2.2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#textfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#contacteznous {
+  text-align: right;
+  padding-right: 20px;
+}
+
+#mentionslegales {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#contacteznous:hover, #mentionslegales:hover {
+  /* Lancement de l'animation Shake pour une durée de 0.5s */
+  animation: shake 0.5s;
+
+  /* Quand l'animation se termine, elle recommence */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h4 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 2.8em;
+  }
+}
+
+/* -------------- La note enchantée ------------- */
+
+#menulanoteenchantee, #menulechicalafrancaise, #menudelicedespapilles, #menulapalettedugout {
+  width: 80%;
+  margin-top: 80px;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-shadow: 0.5px 0.5px 10px #555;
+}
+
+/* ---- fond + police ---- */
+
+#menulanoteenchantee {
+  background-color: #fcdfdb;
+  font-family: 'Playball', cursive;
+}
+
+#menudelicedespapilles {
+  background-color: #fff5fe;
+  font-family: 'Dancing Script', cursive;
+}
+
+#menulapalettedugout {
+  background-color: #fdfffd;
+  font-family: 'Kaushan Script', cursive;
+}
+
+#menulechicalafrancaise {
+  background-color: #fff5fe;
+  font-family: 'Roboto Slab', cursive;
+
+  h2 {
+    background-image: linear-gradient(155deg, #dc8527, #9f63d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* dégradé titre */
+
+/* dégradé titre */
+
+#menudelicedespapilles h2 {
+  background-image: linear-gradient(155deg, #0023db, #50a9f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* dégradé titre */
+
+#menulapalettedugout h2 {
+  background-image: linear-gradient(150deg, #3e923a, #ccfd9c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 3em;
+  justify-content: center;
+}
+
+p, em {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 6em;
+}
+
+img {
+  height: auto;
+}
+
+.titre_entree, .titre_plat, .titre_dessert {
+  margin-bottom: 35px;
+}
+
+p, em {
+  margin-bottom: 17px;
+}
+
+.nommenu {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 110px;
+}
+
+.entree_menu, .plat_menu, .dessert_menu {
+  text-align: center;
+  margin-bottom: 110px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.lignemenu {
+  p {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    width: 75%;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  em {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+    float: right;
+    width: 25%;
+  }
+}
+
+.nommenubas {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10%;
+
+  img {
+    height: 4.5em;
+    max-width: 100%;
+    margin-top: 1%;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  h5 {
+    font-size: 4em;
+    margin: 2%;
+  }
+}
+
+/* ----------------- couleurs menus ---------------- */
+
+#menulechicalafrancaise {
+  .entree_menu {
+    color: #c16800;
+  }
+
+  .plat_menu {
+    color: #a56799;
+  }
+
+  .dessert_menu {
+    color: #6e4ccc;
+  }
+}
+
+/* -------------- traits menus -------------------*/
+
+.titre_entree, .titre_plat, .titre_dessert {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#menulapalettedugout img, #menulanoteenchantee img, #menudelicedespapilles img, #menulechicalafrancaise img {
+  margin: 2%;
+}
+
+/* ------------ anim soulignement menu titres ------------ */
+
+.titre_entree h3.left, .titre_plat h3.left, .titre_dessert h3.left {
+  position: relative;
+}
+
+.titre_entree h3.left:before, .titre_plat h3.left:before, .titre_dessert h3.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #face09;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.titre_entree h3.left:hover:before, .titre_plat h3.left:hover:before, .titre_dessert h3.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* ----------------------- RESPONSIVE ----------------------- */
+@media only screen and (max-width: 1200px) {
+  #menulechicalafrancaise img, #menulanoteenchantee img, #menulapalettedugout img, #menudelicedespapilles img {
+    width: auto;
+    overflow: hidden;
+  }
+
+  #menulechicalafrancaise h2, #menulanoteenchantee h2, #menulapalettedugout h2, #menudelicedespapilles h2 {
+    font-size: 3.5em;
+  }
+
+  #menulachicalafrancaise h3, #menulanoteenchantee h3, #menulapalettedugout h3, #menudelicedespapilles h3 {
+    font-size: 2.5em;
+  }
+
+  #menulachicalafrancaise p, #menulanoteenchantee p, #menulapalettedugout p, #menudelicedespapilles p, #menulachicalafrancaise em, #menulanoteenchantee em, #menulapalettedugout em, #menudelicedespapilles em {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  section {
+    font-size: 80%;
+  }
+
+  #lignemenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nommenu img {
+    height: 8em;
+    width: 8em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #menulachicalafrancaise, #menulanoteenchantee, #menulapalettedugout, #menudelicedespapilles {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  section {
+    font-size: 50%;
+  }
+
+  .entree_menu, .plat_menu, .dessert_menu {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

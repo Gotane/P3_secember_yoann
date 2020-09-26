@@ -1,0 +1,362 @@
+body, h1, h2, h3, h4, i, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+/* ------------------------ HEADER FOOTER -------------------------- */
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #579c87;
+}
+
+footer {
+  background-color: #579c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* titre ohmyfood */
+
+h1 {
+  color: #fdcb46;
+  text-align: center;
+  font-size: 5.5em;
+  padding-bottom: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* titres footer */
+
+h4 {
+  color: #fdcb46;
+  text-align: justify;
+  display: inline-block;
+  font-size: 2.2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#textfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#contacteznous {
+  text-align: right;
+  padding-right: 20px;
+}
+
+#mentionslegales {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#contacteznous:hover, #mentionslegales:hover {
+  /* Lancement de l'animation Shake pour une durée de 0.5s */
+  animation: shake 0.5s;
+
+  /* Quand l'animation se termine, elle recommence */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* ------------------------ ACCUEIL ------------------------ */
+
+article {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 80vh;
+  width: 80vh;
+  margin: 0;
+  padding: 0;
+}
+
+#menus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2.2em;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#menusligne1, #menusligne2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#prochainement {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #579c87;
+  box-shadow: 1px 1px 12px #555;
+  border-radius: 12px 12px / 12px 12px;
+  width: 635px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  color: #fdcb46;
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#menu1 {
+  background-color: #fcdfdb;
+  color: black;
+  box-shadow: 1px 1px 12px #555;
+  text-align: center;
+  align-content: center;
+  margin-right: 2%;
+  font-family: 'Playball', cursive;
+
+  p {
+    padding-top: 50px;
+  }
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+#menu2 {
+  background-color: #fff5fe;
+  box-shadow: 1px 1px 12px #555;
+  text-align: center;
+  align-content: center;
+  font-family: "Roboto Slab", cursive;
+}
+
+#menu3 {
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 12px #555;
+  text-align: center;
+  align-content: center;
+  margin-right: 2%;
+  font-family: 'Dancing Script', cursive;
+
+  p {
+    font-family: 'Kaushan Script', cursive;
+  }
+}
+
+#menu4 {
+  background-color: #fdfffd;
+  box-shadow: 1px 1px 12px #555;
+  text-align: center;
+  font-size: 2.2em;
+  align-content: center;
+  font-family: 'Kaushan Script', cursive;
+}
+
+/* -------- couleur texte titres menus -------- */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu1 {
+  p, h2 {
+    color: black;
+  }
+}
+
+#menu2 {
+  h2 {
+    background-image: linear-gradient(155deg, #dc8527, #9f63d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    color: #c77412;
+  }
+}
+
+#menu3 {
+  h2 {
+    background-image: linear-gradient(155deg, #0023db, #50a9f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    color: #0887fb;
+  }
+}
+
+#menu4 {
+  h2 {
+    background-image: linear-gradient(150deg, #3e923a, #ccfd9c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    color: #72bf56;
+    text-align: center;
+  }
+}
+
+/* animation POINTS */
+
+.points {
+  color: #fdcb46;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fdcb46;
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+
+  span {
+    /* Nom de l'animation défini dans la keyframe au dessus */
+    animation-name: blink;
+
+    /* Durée de l'animation; 1.4secondes */
+    animation-duration: 1.4s;
+
+    /* Elle se répète a l'infini */
+    animation-iteration-count: infinite;
+
+    /*  */
+    animation-fill-mode: both;
+
+    &:nth-child(2) {
+      /* Délai pour le départ de l'animation sur le 2ème point */
+      animation-delay: .2s;
+    }
+
+    &:nth-child(3) {
+      /* Délai pour le départ de l'animation sur le 3ème point */
+      animation-delay: .4s;
+    }
+  }
+}
+
+@keyframes blink {
+  /*Au début de l'animation le point a 0.2 d'opacité */
+  0% {
+    opacity: .2;
+  }
+
+  /* A 20% le point est visible au maximum */
+  20% {
+    opacity: 1;
+  }
+
+  /* On termine avec une opacité à 0.2, et l'animation peut recommencer */
+  100% {
+    opacity: .2;
+  }
+}
+
+/*-------------------- PAGES MENUS ------------------- */
+
+#menu1:hover {
+  img, h2, p {
+    transform: scale(1.2);
+    transition: transform 200ms ease-in;
+  }
+}
+
+#menu2:hover {
+  h2, p {
+    transform: scale(1.2);
+    transition: transform 200ms ease-in;
+  }
+}
+
+#menu3:hover {
+  h2, p {
+    transform: scale(1.2);
+    transition: transform 200ms ease-in;
+  }
+}
+
+#menu4:hover {
+  h2, p {
+    transform: scale(1.2);
+    transition: transform 200ms ease-in;
+  }
+}
+
+#menu1 p, #menu2 p, #menu3 p, #menu4 p {
+  margin-top: 40px;
+  font-size: 1.1em;
+}
+
+img {
+  margin-bottom: 15px;
+}
+
+#menu1 h2, #menu2 h2, #menu3 h2, #menu4 h2 {
+  font-size: 1.1em;
+}
